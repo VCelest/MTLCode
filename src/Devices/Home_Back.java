@@ -68,7 +68,7 @@ public class Home_Back {
 		  System.out.println("Weather icon under homepage is verified");
 
 	    driver.pressKeyCode(AndroidKeyCode.BACK);
-		
+		System.out.println("Application back key is pressed");
 	}
 		
 	
