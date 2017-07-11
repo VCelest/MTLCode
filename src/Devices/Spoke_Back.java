@@ -77,19 +77,13 @@ public class Spoke_Back {
 			driver.findElement(By.name("国際")).click();
 		}   
 		
+		System.out.println("Press android back key");
 		driver.pressKeyCode(AndroidKeyCode.BACK);
 		WebElement weather_icon=driver.findElement(By.xpath("//android.widget.ImageView[contains(@resource-id,'weather_icon')]"));
 		WebDriverWait wait = new WebDriverWait(driver,80);
 		System.out.println("Now verification for weather icon existence if not script will fail");
-		  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.ImageView[contains(@resource-id,'weather_icon')]")));
-		  
-	//	WebElement weather_icon=driver.findElement(By.id("jp.co.necp.mytimeline:id/weather_icon"));
-		
-	//	Point s=weather_icon.getLocation();
-		
-	//	MobileElement weather_icon =(MobileElement)(driver.findElement(By.id("jp.co.necp.mytimeline:id/weather_icon")));
+		 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.ImageView[contains(@resource-id,'weather_icon')]")));
 	 
-	
 	}
 		
 	@AfterTest
