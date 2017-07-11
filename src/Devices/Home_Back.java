@@ -38,8 +38,9 @@ public class Home_Back {
 	
 	 public void setup() throws MalformedURLException
 	 
-	 
 	 {
+		
+		System.out.println("Ssetting desired capibilities");
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability("no-reset", "true");
 		cap.setCapability("full-reset", "false");
