@@ -81,9 +81,9 @@ public class Spoke_Back {
 		driver.pressKeyCode(AndroidKeyCode.BACK);
 		WebElement weather_icon=driver.findElement(By.xpath("//android.widget.ImageView[contains(@resource-id,'weather_icon')]"));
 		WebDriverWait wait = new WebDriverWait(driver,80);
-		System.out.println("Now verification for weather icon existence if not script will fail");
+		
 		 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.ImageView[contains(@resource-id,'weather_icon')]")));
-	 
+		 System.out.println("Weather existence under homepage is verified");
 	}
 		
 	@AfterTest
