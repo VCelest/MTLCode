@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="139140" started-at="2017-07-12T07:16:00Z" finished-at="2017-07-12T07:18:19Z">
+  <suite name="Default suite" duration-ms="33607" started-at="2017-07-12T11:43:03Z" finished-at="2017-07-12T11:43:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="139140" started-at="2017-07-12T07:16:00Z" finished-at="2017-07-12T07:18:19Z">
-      <class name="Devices.Spoke_Back">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Devices.Spoke_Back@5c7fa833]" name="setup" is-config="true" duration-ms="12448" started-at="2017-07-12T12:46:00Z" finished-at="2017-07-12T12:46:13Z">
+    <test name="Default test" duration-ms="33607" started-at="2017-07-12T11:43:03Z" finished-at="2017-07-12T11:43:37Z">
+      <class name="Devices.Ribbon_Registration">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="setup" is-config="true" duration-ms="9363" started-at="2017-07-12T17:13:03Z" finished-at="2017-07-12T17:13:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test()[pri:0, instance:Devices.Spoke_Back@5c7fa833]" name="test" duration-ms="125752" started-at="2017-07-12T12:46:13Z" finished-at="2017-07-12T12:48:19Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="test" duration-ms="23346" started-at="2017-07-12T17:13:12Z" finished-at="2017-07-12T17:13:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Devices.Spoke_Back@5c7fa833]" name="close" is-config="true" duration-ms="920" started-at="2017-07-12T12:48:19Z" finished-at="2017-07-12T12:48:19Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="close" is-config="true" duration-ms="868" started-at="2017-07-12T17:13:36Z" finished-at="2017-07-12T17:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- Devices.Spoke_Back -->
+      </class> <!-- Devices.Ribbon_Registration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
