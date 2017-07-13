@@ -5,7 +5,6 @@
     <classes>
       <class name="Devices.Ribbon_Registration">
         <methods>
-          <include name="close"/>
           <include name="setup"/>
           <include name="test"/>
         </methods>

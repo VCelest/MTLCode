@@ -33,7 +33,7 @@ public class Ribbon_Registration {
 	
 	//Capabilities of apk going to automate
 	@BeforeTest
-	 public void setup() throws MalformedURLException
+	 public void setup() throws MalformedURLException	
 	 {
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability("no-reset", "true");
@@ -51,8 +51,8 @@ public class Ribbon_Registration {
 		
 	 }
 	
-	@Test
-	public void test() 
+	@Test(priority=0)
+	public void ribbon_Register() 
 	{
 System.out.println("CLicking on settings icon");
 		WebElement settings_icon = driver.findElement(By.id("jp.co.necp.mytimeline:id/header_setting_button"));
@@ -76,7 +76,8 @@ System.out.println("Registering ribbon with name Intel");
 		WebElement created_ribbon=driver.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_text"));
 		System.out.println("Created ribbon under ribbon list is : "+created_ribbon.getText());
 System.out.println("Verification under ribbon registration screen");
-		assertEquals(ribbon_name, created_ribbon.getText());
+        Assert.assertEquals(ribbon_name, created_ribbon.getText());
+		
 		
 		WebElement final_submit = driver.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_setting_myribbon_update_button"));
 		final_submit.click();
@@ -86,11 +87,14 @@ System.out.println("Verification under ribbon registration screen");
 		WebElement myribbon_decide_button = driver.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_decide_button"));
 		myribbon_decide_button.click();
 System.out.println("Verification under ribbon Created list screen");		
-		assertEquals(ribbon_name, created_ribbon.getText());
-		
-				
-		
-	}
+		Assert.assertEquals(ribbon_name, created_ribbon.getText());
+		}
+	
+    @Test(priority=1)	
+   public void ribbon_deletion()
+   {
+    	
+   }
 	
 	@AfterTest
 	public void close() throws InterruptedException

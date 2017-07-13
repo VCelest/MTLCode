@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33607" started-at="2017-07-12T11:43:03Z" finished-at="2017-07-12T11:43:37Z">
+  <suite name="Default suite" duration-ms="28991" started-at="2017-07-13T10:33:37Z" finished-at="2017-07-13T10:34:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33607" started-at="2017-07-12T11:43:03Z" finished-at="2017-07-12T11:43:37Z">
+    <test name="Default test" duration-ms="28991" started-at="2017-07-13T10:33:37Z" finished-at="2017-07-13T10:34:06Z">
       <class name="Devices.Ribbon_Registration">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="setup" is-config="true" duration-ms="9363" started-at="2017-07-12T17:13:03Z" finished-at="2017-07-12T17:13:12Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="setup" is-config="true" duration-ms="7759" started-at="2017-07-13T16:03:37Z" finished-at="2017-07-13T16:03:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="test" duration-ms="23346" started-at="2017-07-12T17:13:12Z" finished-at="2017-07-12T17:13:36Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="test" duration-ms="20276" started-at="2017-07-13T16:03:45Z" finished-at="2017-07-13T16:04:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="close" is-config="true" duration-ms="868" started-at="2017-07-12T17:13:36Z" finished-at="2017-07-12T17:13:37Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:Devices.Ribbon_Registration@7823a2f9]" name="close" is-config="true" duration-ms="926" started-at="2017-07-13T16:04:05Z" finished-at="2017-07-13T16:04:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
