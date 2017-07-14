@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="Devices.Ribbon_Registration">
+      <class name="Devices.Ribbon_Deletion">
         <methods>
+          <include name="ribbon_delete"/>
           <include name="setup"/>
-          <include name="test"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- Devices.Ribbon_Registration -->
+      </class> <!-- Devices.Ribbon_Deletion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

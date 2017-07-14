@@ -1,3 +1,5 @@
+//Prerequisite all ribbons must be deleted first
+
 package Devices;
 
 import java.util.NoSuchElementException;
@@ -26,7 +28,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 
-public class Ribbon_Registration {
+public class Ribbon_Deletion {
 	
 	AndroidDriver driver;
 	
@@ -73,11 +75,13 @@ System.out.println("Registering ribbon with name Intel");
 		//click create ribbon button
 		WebElement hit_createRibbon = driver.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_setting_keyword_add_button"));
 		hit_createRibbon.click();
-		WebElement created_ribbon=driver.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_text"));
+		WebElement created_ribbon=driver.findElement(By.name(ribbon_name));
 		System.out.println("Created ribbon under ribbon list is : "+created_ribbon.getText());
 System.out.println("Verification under ribbon registration screen");
+        
+// Comparison between inserted ribbon name and created ribbon name
         Assert.assertEquals(ribbon_name, created_ribbon.getText());
-		
+		System.out.println("passed");
 		
 		WebElement final_submit = driver.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_setting_myribbon_update_button"));
 		final_submit.click();
@@ -86,10 +90,30 @@ System.out.println("Verification under ribbon registration screen");
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("jp.co.necp.mytimeline:id/myribbon_decide_button")));
 		WebElement myribbon_decide_button = driver.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_decide_button"));
 		myribbon_decide_button.click();
-System.out.println("Verification under ribbon Created list screen");		
+System.out.println("Verification under ribbon Created list screen");	
+
+//Comparison between inserted ribbon name and created ribbon name     
+        
 		Assert.assertEquals(ribbon_name, created_ribbon.getText());
 		}
 	
+	// delete created ribbon
+       @Test(priority=1)
+       public void ribbon_delete()
+       {
+    	   String name1 = "Intel";
+    	   WebElement e1 = driver.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_delete_mode_button"));
+    	/*   WebElement e2=e1.findElement(By.id("jp.co.necp.mytimeline:id/myribbon_delete_mode_button"));
+    	   e2.click(); */
+    	   e1.click();
+    	  
+    	   WebDriverWait wait4 = (WebDriverWait) new WebDriverWait(driver,10).ignoring(TimeoutException.class,NoSuchElementException.class);
+   		   wait4.until(ExpectedConditions.visibilityOfElementLocated(By.name("削除")));
+    	   
+    	   WebElement e3 = driver.findElement(By.name("削除"));
+    	   e3.click();   // click on final delete icon
+    	   
+       }
 	
 	@AfterTest
 	public void close() throws InterruptedException
